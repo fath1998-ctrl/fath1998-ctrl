@@ -45,6 +45,24 @@
             font-size: 20px;
             margin-bottom: 5px;
         }
+
+        @media (max-width: 768px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            .nav-bar {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background-color: #f8f8f8;
+                border-top: 1px solid #ccc;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+            }
+        }
     </style>
     <script>
         function changeIframe(src) {
