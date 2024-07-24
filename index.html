@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Airtable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe id="airtable-iframe" class="airtable-embed" src="https://airtable.com/embed/appXImzzYTjOiQs8j/shrbbEtEKSDz3XEyU" frameborder="0" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </div>
+    <div class="nav-bar">
+        <a onclick="changeIframe('https://airtable.com/embed/appXImzzYTjOiQs8j/shrbbEtEKSDz3XEyU')">
+            <i class="fas fa-clipboard-list"></i>
+            <span>Status Pembayaran</span>
+        </a>
+        <a onclick="changeIframe('https://airtable.com/embed/appWas0faYVmss7LL/paggDdj0aMMKiuc8R/form')">
+            <i class="fas fa-check-circle"></i>
+            <span>Konfirmasi Pembayaran</span>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
